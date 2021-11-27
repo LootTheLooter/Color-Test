@@ -1,0 +1,105 @@
+/* spaghetti */
+
+/* other elements */
+span {
+    color: black;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+#randomColorButton:hover {
+    filter: brightness(80%);
+}
+#randomColorButton:active {
+    filter: brightness(120%);
+}
+
+#HEXInput {
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    width: 10%;
+    font-size: 120%;
+}
+
+/* containers and divs */
+
+#rangeContainers {
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(200, 200, 200);
+    padding-bottom: 1%;
+    border: grey ridge 10px;
+    border-radius: 20px;
+}
+
+#rangeContainers *:not(.slider, div#Editable, .btn) {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#Editable {
+    background-color: white;
+    margin: 20px auto;
+    height: 200px;
+    width: 200px;
+}
+
+.sliderContainer {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+}
+
+/* slider stuff */
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 20px;
+    width: 270px;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: solid 3px grey;
+  border-radius: 40%;
+}  
+.slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: solid 3px grey;
+    border-radius: 40%;
+  }
+/* buttons */
+
+.btn {
+    color: black;
+    font-weight: bold;
+}
+
+#randomColorButton {
+    border-radius: 20px;
+    border: 10px solid lime;
+    padding: 100px;
+    background-color: rgb(85, 85, 85);
+}
+
+#resetButton {
+    border: 5px solid grey;
+    border-radius: 10px;
+    background: rgb(160, 160, 160);
+}
+
+#importButton {
+    border: 5px solid grey;
+    border-radius: 3px;
+    background: rgb(100, 100, 100);
+    margin: 1%;
+    font-size: 100%;
+    width: 10%;
+}
