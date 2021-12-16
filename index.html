@@ -16,7 +16,7 @@
     <button id="randomColorButton"></button>
 
     <div id="rangeContainers">
-        <h2 style="color: black">Color Customizer</h2>
+        <h2 style="color: black">Color Picker</h2>
         <div id="Editable"></div>
         <span id="HEXText">HEX: </span>
 
@@ -28,24 +28,24 @@
         <br>
 
         <div id="rContainer" class="sliderContainer">
-            <span id="redSpan">Red:</span>
+            <span id="redSpan" class="sliderSpan">Red:</span>
             <br>
             <input type="range" min="0" max="255" value="128" class="slider" id="rSlider" style="background-color: red;">
         </div>
 
         <div id="gContainer" class="sliderContainer">
-            <span id="greenSpan">Green:</span>
+            <span id="greenSpan" class="sliderSpan">Green:</span>
             <br>
             <input type="range" min="0" max="255" value="128" class="slider" id="gSlider" style="background-color: green;">
         </div>
 
         <div id="bContainer" class="sliderContainer">
-            <span id="blueSpan">Blue:</span>
+            <span id="blueSpan" class="sliderSpan">Blue:</span>
             <br>
             <input type="range" min="0" max="255" value="128" class="slider" id="bSlider" style="background-color: blue;">
         </div>
         <div id="aContainer" class="sliderContainer">
-            <span id="alphaSpan">Alpha: </span>
+            <span id="alphaSpan" class="sliderSpan">Alpha: </span>
             <br>
             <input type="range" min="0" max="1" value="1" step="0.1" class="slider" id="aSlider" style="background-color: rgb(120, 120, 120);">
         </div>
@@ -53,8 +53,8 @@
         <button class="btn" id="resetButton">Reset</button>
     </div>
 
-    <script src=index.js></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="/universal.css">
+    <script src=index.js></script>
 </body>
 </html>
